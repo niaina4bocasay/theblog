@@ -1,0 +1,27 @@
+theblog_accueil:
+    path:     /blog
+    defaults: { _controller: TheBlogBlogBundle:Blog:index }
+
+theblog_recherche:
+    path:     /blog_recherche
+    defaults: { _controller: TheBlogBlogBundle:Blog:recherche }
+
+theblog_about:
+    path:     /about
+    defaults: { _controller: TheBlogBlogBundle:Blog:about }
+
+theblog_photo:
+    path:     /photo
+    defaults: { _controller: TheBlogBlogBundle:Blog:photo }
+
+theblog_archives:
+    path:     /archives
+    defaults: { _controller: TheBlogBlogBundle:Blog:archives }
+
+theblog_contact:
+    path:     /contact
+    defaults: { _controller: TheBlogBlogBundle:Blog:contact }
+
+theblog_details:
+    path:     /article/{id}
+    defaults: { _controller: TheBlogBlogBundle:Blog:details }

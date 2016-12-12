@@ -1,0 +1,31 @@
+admin_admin_homepage:
+    path:     /admin/liste_article
+    defaults: { _controller: AdminAdminBundle:AdminArticle:index }
+
+admin_admin_ajoutcategorie:
+    path:     /admin/ajout_categorie
+    defaults: { _controller: AdminAdminBundle:AdminCategorie:ajouter}
+
+admin_admin_ajoutarticle:
+    path:     /admin/ajout_article
+    defaults: { _controller: AdminAdminBundle:AdminArticle:ajouter}
+
+admin_admin_modifiercategorie:
+    path:     /admin/modif_categorie/{id}
+    defaults: { _controller: AdminAdminBundle:AdminCategorie:editer}
+
+admin_admin_supprimercategorie:
+    path:     /admin/suppr_categorie/{id}
+    defaults: { _controller: AdminAdminBundle:AdminCategorie:supprimer}
+
+admin_admin_supprimerarticle:
+    path:     /admin/suppr_article/{id}
+    defaults: { _controller: AdminAdminBundle:AdminArticle:supprimer}
+
+admin_admin_modifierarticle:
+    path:     /admin/modif_article/{id}
+    defaults: { _controller: AdminAdminBundle:AdminArticle:editer}
+
+admin_admin_categorie:
+    path:     /admin/liste_categorie
+    defaults: { _controller: AdminAdminBundle:AdminCategorie:index }
