@@ -26,7 +26,7 @@
                                         {% endfor %}
                                     </div>
                                 {% endif %}
-                                <form method="post" action="{{ path('admin_admin_ajoutarticle') }}">
+                                <form method="post" action="{{ path('admin_admin_ajoutarticle') }}" enctype="multipart/form-data">
                                     <div class="form-group">
                                         <label>{{ form_label(formajout.titre,'Titre') }}</label>
                                         {{ form_widget(formajout.titre, {'attr':{'class':'form-control'}}) }}
@@ -43,8 +43,8 @@
                                         {{ form_widget(formajout.publication, {'attr':{'class':'form-control'}}) }}
                                     </div>
                                     <div class="form-group">
-                                        <label>{{ form_label(formajout.image.url,'Url Image') }}</label>
-                                        {{ form_widget(formajout.image.url, {'attr':{'class':'form-control'}}) }}
+                                        <label>{{ form_label(formajout.image.file,'Image : ') }}</label>
+                                        {{ form_widget(formajout.image.file, {'attr':{'class':'form-control'}}) }}
                                     </div>
                                     <div class="form-group">
                                         <label>{{ form_label(formajout.categories,'Catégorie') }}</label>

@@ -16,7 +16,12 @@ class ArticleType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('titre')->add('auteur')->add('contenu', 'textarea', array('attr' => array('class' => 'tinymce'), 'required' => false))->add('publication')->add('image', new ImageType() )->add('categories', 'entity', array('class' => 'TheBlogBlogBundle:Categories','property' => 'nom', 'multiple' => false))        ;
+        $builder->add('titre')
+            ->add('auteur')
+            ->add('contenu', 'textarea', array('attr' => array('class' => 'tinymce'), 'required' => false))
+            ->add('publication')->add('image', new ImageType() )
+            ->add('categories', 'entity', array('class' => 'TheBlogBlogBundle:Categories','property' => 'nom', 'multiple' => false))
+        ;
     }
     
     /**
