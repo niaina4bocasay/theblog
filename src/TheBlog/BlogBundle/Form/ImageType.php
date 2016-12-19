@@ -13,7 +13,9 @@ class ImageType extends AbstractType
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('url', 'text')        ;
+        $builder
+            ->add('file', 'file', array('required' => false))
+        ;
     }
     
     /**
@@ -33,6 +35,4 @@ class ImageType extends AbstractType
     {
         return 'theblog_blogbundle_image';
     }
-
-
 }

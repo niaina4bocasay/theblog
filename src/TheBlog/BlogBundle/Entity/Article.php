@@ -64,7 +64,7 @@ class Article
     private $image;
 
     /**
-     * @ORM\OneToMany(targetEntity="TheBlog\BlogBundle\Entity\Commentaires", mappedBy="article")
+     * @ORM\OneToMany(targetEntity="TheBlog\BlogBundle\Entity\Commentaires", mappedBy="article", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=true)
      */
     private $commentaires;
